@@ -4,10 +4,8 @@ import { lisFollowerFollowingI } from "../../types/follow";
 // import { useQuery } from "react-query";
 import { token } from "../../types/token";
 import { unFollowUser, followOneUser } from "../../api/follow";
-import useDataUser from "@/hooks/useDataUser";
 const FollowList: React.FC<lisFollowerFollowingI> = (props) => {
   const [isFollow, setIsFollow] = useState(false);
-  const { refetchProfile } = useDataUser();
 
   useEffect(() => {
     if (props.isFollowing === true) {

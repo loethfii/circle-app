@@ -1,9 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useEffect } from "react";
+import React from "react";
 import { Box, Text } from "@chakra-ui/react";
 import ProfileCard from "../../../components/card/ProfileCard";
-import { profileData } from "../../../api/profile";
-import { profile } from "../../../types/profilePic";
 import FollowerCard from "../../../components/card/FollowerCard";
 import { useQuery } from "react-query";
 import { sugestedUser } from "../../../api/follow";

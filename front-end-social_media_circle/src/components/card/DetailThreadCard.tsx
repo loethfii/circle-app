@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   Card,
   Flex,
@@ -11,7 +11,7 @@ import {
 import { cardDetailI } from "../../types/card";
 import ProfilePic from "../../components/profilePic/ProfilePic";
 import { LiaComment } from "react-icons/lia";
-import { FaHeart, FaRegHeart } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 // import { likeThread, isLikeThread, unLikeThread } from "../../api/thread";
 
 const DetailThreadCard: React.FC<cardDetailI> = (props) => {

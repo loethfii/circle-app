@@ -4,12 +4,6 @@
 //   RefetchQueryFilters,
 // } from "react-query";
 
-import {
-  QueryObserverResult,
-  RefetchOptions,
-  RefetchQueryFilters,
-} from "react-query";
-
 export interface cardInterface {
   threadId: number;
   mt: string;
@@ -23,9 +17,8 @@ export interface cardInterface {
   like: number;
   replies: number;
   isLike: boolean;
-  refetch: <TPageData>(
-    options?: (RefetchOptions & RefetchQueryFilters<TPageData>) | undefined
-  ) => Promise<QueryObserverResult<void, unknown>>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  refetch: any;
 }
 
 export interface cardDetailI {
